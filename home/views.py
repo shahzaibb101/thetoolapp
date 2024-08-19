@@ -27,7 +27,6 @@ def create_checkout(request):
                 {
                     'price_data': {
                         'currency': 'usd',
-                        'unit_amount': 1000,
                         'product_data': {
                             'name': plan_name,
                             # 'images': ['https://i.imgur.com/EHyR2nP.png'],
