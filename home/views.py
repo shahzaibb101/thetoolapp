@@ -14,7 +14,7 @@ def home(request):
     return render(request, "index.html", {'STRIPE_PUBLIC_KEY': STRIPE_PUBLIC_KEY})
 
 def create_checkout(request):
-    YOUR_DOMAIN = "http://127.0.0.1:8000"
+    YOUR_DOMAIN = "https://thetoolclub.com"
     cancel_url = '/'
     success_url = '/'
     data = json.loads(request.body)
