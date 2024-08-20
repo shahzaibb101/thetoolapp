@@ -13,6 +13,7 @@ stripe.api_key = STRIPE_SECRET_KEY
 def home(request):
     return render(request, "index.html", {'STRIPE_PUBLIC_KEY': STRIPE_PUBLIC_KEY})
 
+@csrf_exempt
 def create_checkout(request):
     YOUR_DOMAIN = "https://thetoolclub.com"
     cancel_url = '/'
