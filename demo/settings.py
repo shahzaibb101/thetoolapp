@@ -31,6 +31,12 @@ ALLOWED_HOSTS = ['*']
 SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+# csrf
+CSRF_TRUSTED_ORIGINS = [
+    'https://thetoolclub.com',
+    'https://www.thetoolclub.com',
+]
+
 
 # Application definition
 
