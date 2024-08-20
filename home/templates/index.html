@@ -169,7 +169,7 @@
           </div>
 
           <div class="col-lg-4 order-1 order-lg-2 why-us-img">
-            <img src="/static/img/Main-Pics/11.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="/static/img/Main-Pics/22.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
 
@@ -394,30 +394,6 @@
   <!-- Main JS File -->
   <script src="/static/js/main.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-
-        // List of images corresponding to the FAQ items
-        const faqImages = [
-            "/static/img/Main-Pics/11.png", // For Membership
-            "/static/img/Main-Pics/22.png", // For Borrow
-            "/static/img/Main-Pics/33.png", // For Use
-            "/static/img/Main-Pics/55.png", // For Return
-            "/static/img/Main-Pics/66.png"  // For Repeat
-        ];
-    
-        // Select all the FAQ toggles
-        const faqToggles = document.querySelectorAll('.faq-item');
-    
-        // Attach click event to each FAQ toggle
-        faqToggles.forEach((toggle, index) => {
-            toggle.addEventListener('click', function() {
-            // Set the image source based on the clicked FAQ item
-            const imgElement = document.querySelector('.why-us-img img');
-            imgElement.src = faqImages[index];
-            });
-        });
-    });
-
     var stripe = Stripe("{{ STRIPE_PUBLIC_KEY }}");
     const planButtons = document.querySelectorAll(".plan-button");
     const csrftoken = getCookie('csrftoken');
